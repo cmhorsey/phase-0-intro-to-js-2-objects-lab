@@ -17,3 +17,10 @@ function destructivelyUpdateEmployeeWithKeyAndValue(obj, key, value) {
   return newObj;
 };
 
+function deleteFromEmployeeByKey(employee, obj, key) {
+  const newObj = {...obj};
+
+  delete newObj.key;
+
+  return newObj;
+};
