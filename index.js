@@ -9,4 +9,11 @@ function updateEmployeeWithKeyAndValue(obj, key, value) {
   return newObj;
 };
 
+function destructivelyUpdateEmployeeWithKeyAndValue(obj, key, value) {
+  const newObj = obj;
+
+  newObj[key] = value;
+
+  return newObj;
+};
 
